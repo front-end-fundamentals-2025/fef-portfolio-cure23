@@ -1,0 +1,38 @@
+/* <uniquifier>: Use a unique and descriptive class name
+   <weight>: Use a value from 400 to 700*/
+
+* {
+  font-family: "Domine", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* HEADER */
+
+#logo {
+  font-weight: 600;
+  font-size: 3rem;
+  border: 2px solid black;
+  display: inline;
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: black;
+}
+
+/* MAIN */
+.main-img {
+  width: 50%;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 4rem;
+  border-top: 2px solid black;
+}
