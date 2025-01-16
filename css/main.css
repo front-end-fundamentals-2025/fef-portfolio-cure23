@@ -2,6 +2,7 @@
    <weight>: Use a value from 400 to 700*/
 
 * {
+  text-align: center;
   font-family: "Domine", serif;
   font-weight: 600;
   font-style: normal;
@@ -9,23 +10,29 @@
 
 /* HEADER */
 
-#logo {
+/* #logo {
   font-weight: 600;
   font-size: 3rem;
   border: 2px solid black;
   display: inline;
   padding: 5px;
+} */
+
+#logo {
+  font-weight: 600;
+  font-size: 3rem;
+  display: inline;
+  padding: 10px;
 }
 
 ul {
-  align-content: center;
   list-style: none;
   padding-left: 0;
 }
 
 li {
   display: inline;
-  padding-right: 20px;
+  margin: 20px;
 }
 
 a {
@@ -35,6 +42,11 @@ a {
 /* MAIN */
 .main-img {
   width: 50%;
+}
+
+p {
+  padding: 3rem;
+  text-align: left;
 }
 
 /* FOOTER */
