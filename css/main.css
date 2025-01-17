@@ -1,42 +1,45 @@
-/* <uniquifier>: Use a unique and descriptive class name
-   <weight>: Use a value from 400 to 700*/
-
 * {
-  text-align: center;
-  font-family: "Domine", serif;
-  font-weight: 600;
+  /* text-align: left; */
+  font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
 }
 
 /* HEADER */
 
-/* #logo {
-  font-weight: 600;
-  font-size: 3rem;
-  border: 2px solid black;
-  display: inline;
-  padding: 5px;
-} */
+header {
+  text-align: center;
+}
 
 #logo {
-  font-weight: 600;
+  font-family: "Domine", serif;
+  font-weight: 1000;
+  font-style: normal;
   font-size: 3rem;
-  display: inline;
-  padding: 10px;
+  display: inline-block;
+  padding: 0;
+  border-bottom: 4px solid black;
+  margin: 5px;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+  padding-top: 10px;
+  border-top: 1px solid rgba(200, 200, 200, 0.5);
 }
 
 li {
   display: inline;
-  margin: 20px;
+  margin: 10px;
 }
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 /* MAIN */
@@ -44,13 +47,58 @@ a {
   width: 50%;
 }
 
-p {
-  padding: 3rem;
-  text-align: left;
+main {
+  margin-top: 5rem;
 }
 
 /* FOOTER */
 footer {
-  margin-top: 4rem;
-  border-top: 2px solid black;
+  font-size: small;
+  text-align: center;
+  margin-top: 5rem;
+  border-top: 2px solid rgba(200, 200, 200, 0.5);
+}
+
+h1 {
+  font-size: xxx-large;
+  font-weight: 800;
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+#copyright {
+  color: rgb(200, 200, 200);
+}
+
+.footer-img {
+  width: 2%;
+  margin: 1%;
+}
+
+/* CONTACT PAGE */
+
+.form-elements {
+  margin-block: 10px;
+  margin-left: 50%;
+  text-align: left;
+}
+
+h2 {
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+textarea {
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  background-color: rgba(200, 200, 200, 0.25);
+}
+
+#contact-button {
+  font-size: small;
+  font-weight: 500;
+  border: 2px solid rgba(200, 200, 200, 0.5);
+  background-color: white;
 }
