@@ -13,13 +13,14 @@ header {
 }
 
 #logo {
+  color: rgb(82, 109, 79);
   font-family: "Domine", serif;
   font-weight: 1000;
   font-style: normal;
   font-size: 3rem;
   display: inline-block;
   padding: 0;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid rgb(82, 109, 79);
   margin: 5px;
 }
 
@@ -49,6 +50,14 @@ a {
 
 main {
   margin-top: 5rem;
+}
+
+#name {
+  color: rgb(82, 109, 79);
+}
+
+h3 {
+  font-size: x-large;
 }
 
 /* FOOTER */
@@ -97,8 +106,14 @@ textarea {
 }
 
 #contact-button {
-  font-size: small;
+  font-size: medium;
   font-weight: 500;
-  border: 2px solid rgba(200, 200, 200, 0.5);
-  background-color: white;
+  color: white;
+  border: 2px solid rgba(82, 109, 79, 0.25);
+  border-radius: 10px;
+  background-color: rgba(82, 109, 79, 0.75);
+}
+
+.italic-font {
+  font-style: italic;
 }
