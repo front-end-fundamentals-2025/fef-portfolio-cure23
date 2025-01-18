@@ -28,8 +28,8 @@ ul {
   list-style: none;
   padding-left: 0;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
   padding-top: 10px;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
   border-top: 1px solid rgba(200, 200, 200, 0.5);
 }
 
@@ -48,16 +48,32 @@ a {
   width: 50%;
 }
 
-main {
+/* main {
   margin-top: 5rem;
+} */
+
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 100%;
+  display: inline;
+}
+
+#front-text {
+  margin: 5rem;
+  margin-top: 7rem;
 }
 
 #name {
+  margin-left: 0.2em;
+  margin-top: 1rem;
+  font-family: "Domine", serif;
   color: rgb(82, 109, 79);
 }
 
 h3 {
   font-size: x-large;
+  margin-block: 10px;
 }
 
 /* FOOTER */
@@ -66,12 +82,6 @@ footer {
   text-align: center;
   margin-top: 5rem;
   border-top: 2px solid rgba(200, 200, 200, 0.5);
-}
-
-h1 {
-  font-size: xxx-large;
-  font-weight: 800;
-  margin: 0;
 }
 
 p {
