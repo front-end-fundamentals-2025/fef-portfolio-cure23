@@ -44,13 +44,8 @@ a {
 }
 
 /* MAIN */
-.main-img {
-  width: 50%;
-}
 
-/* main {
-  margin-top: 5rem;
-} */
+/* Big text home page */
 
 h1 {
   font-size: 5rem;
@@ -62,6 +57,7 @@ h1 {
 #front-text {
   margin: 5rem;
   margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 #name {
@@ -74,6 +70,34 @@ h1 {
 h3 {
   font-size: x-large;
   margin-block: 10px;
+}
+
+/* Green section home-page */
+
+#dark-green {
+  background-color: rgba(82, 109, 79, 1);
+}
+
+#green-part {
+  background-color: rgba(82, 109, 79, 0.5);
+  color: white;
+
+  p {
+    margin-left: 2%;
+    padding-bottom: 2%;
+  }
+
+  h2 {
+    font-size: x-large;
+    padding-top: 2%;
+    margin-bottom: 0px;
+    margin-left: 2%;
+  }
+}
+
+.home-proj-img {
+  padding: 2%;
+  width: 25%;
 }
 
 /* FOOTER */
@@ -101,8 +125,12 @@ p {
 
 .form-elements {
   margin-block: 10px;
-  margin-left: 50%;
   text-align: left;
+}
+
+#contact-content {
+  margin-top: 7%;
+  margin-left: 50%;
 }
 
 h2 {
