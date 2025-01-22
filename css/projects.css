@@ -1,0 +1,16 @@
+/* .projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} */
+
+.projects-container {
+  display: grid;
+  grid-template-areas:
+    "project project project"
+    "project project project";
+}
+
+.project-img {
+  grid-area: project;
+  width: 100%;
+}
