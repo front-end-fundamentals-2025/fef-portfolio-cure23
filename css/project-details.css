@@ -1,0 +1,21 @@
+.details-container {
+  display: grid;
+  grid-template-areas:
+    "main-img main-img main-img main-img txt"
+    "main-img main-img main-img main-img txt"
+    "small-img small-img small-img small-img txt";
+}
+
+.small-img {
+  grid-area: small-img;
+  width: 100%;
+}
+
+.main-img {
+  grid-area: main-img;
+  width: 400%;
+}
+
+.detail-text {
+  grid-area: txt;
+}
