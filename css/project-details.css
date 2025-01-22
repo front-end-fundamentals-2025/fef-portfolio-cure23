@@ -6,16 +6,18 @@
     "small-img small-img small-img small-img txt";
 }
 
-.small-img {
-  grid-area: small-img;
-  width: 100%;
-}
-
 .main-img {
   grid-area: main-img;
-  width: 400%;
+  width: 100%;
 }
 
 .detail-text {
   grid-area: txt;
+  max-width: 400px;
+}
+
+/* make them in line otherwise one takes up all 4 spaces??? */
+.small-img {
+  grid-area: small-img;
+  width: 100%;
 }
