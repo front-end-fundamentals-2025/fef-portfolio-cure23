@@ -1,9 +1,18 @@
 .details-container {
+  margin-top: 5rem;
+  margin-left: 3rem;
   display: grid;
   grid-template-areas:
     "main-img main-img main-img main-img txt"
     "main-img main-img main-img main-img txt"
-    "small-img small-img small-img small-img txt";
+    "small-img1 small-img2 small-img3 small-img4 button";
+  gap: 10px;
+}
+
+.back-button {
+  grid-area: button;
+  margin-inline: 3rem;
+  place-self: end end;
 }
 
 .main-img {
@@ -18,6 +27,15 @@
 
 /* make them in line otherwise one takes up all 4 spaces??? */
 .small-img {
-  grid-area: small-img;
+  grid-area: small-img1 small-img2 small-img3 small-img4;
   width: 100%;
+}
+
+#cover-img {
+  width: 100%;
+}
+
+h2 {
+  margin-top: 0;
+  /*   padding-top: 0; */
 }

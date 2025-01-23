@@ -31,6 +31,7 @@ ul {
   padding-top: 10px;
   border-bottom: 1px solid rgba(200, 200, 200, 0.5);
   border-top: 1px solid rgba(200, 200, 200, 0.5);
+  margin-bottom: 0;
 }
 
 li {
@@ -159,7 +160,7 @@ textarea {
   background-color: rgba(200, 200, 200, 0.25);
 }
 
-#contact-button {
+.button {
   font-size: medium;
   font-weight: 500;
   color: white;
