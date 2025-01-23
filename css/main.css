@@ -113,11 +113,15 @@ h2 {
 }
 
 /* FOOTER */
+
 footer {
+  background-color: rgba(82, 109, 79, 1);
+  color: white;
   font-size: small;
   text-align: center;
   margin-top: 5rem;
-  border-top: 2px solid rgba(200, 200, 200, 0.5);
+  /* border-top: 2px solid rgba(200, 200, 200, 0.5); */
+  padding-bottom: 1%;
 }
 
 p {
@@ -130,34 +134,16 @@ p {
 
 .footer-img {
   width: 2%;
-  margin: 1%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-right: 5px;
 }
 
 /* CONTACT PAGE */
 
-.form-text {
-  margin: 0px;
-  padding-right: 25%;
-}
-
-.form-elements {
-  margin-block: 10px;
-  text-align: left;
-}
-
-#contact-content {
-  margin-top: 3rem;
-  margin-left: 50%;
-}
-
 h2 {
   font-size: xxx-large;
   font-weight: bold;
-}
-
-textarea {
-  border: 1px solid rgba(200, 200, 200, 0.5);
-  background-color: rgba(200, 200, 200, 0.25);
 }
 
 .button {
