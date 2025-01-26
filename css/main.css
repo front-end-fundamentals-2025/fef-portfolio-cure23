@@ -104,12 +104,32 @@ h2 {
   margin-left: 3rem;
 }
 
-#home-proj-section {
+/* Top-projects section */
+/* #home-proj-section {
   margin-inline: 3rem;
-}
-.home-proj-img {
+} */
+/* .home-proj-img {
   padding-right: 1rem;
   width: 25%;
+} */
+
+#home-proj-section {
+  display: grid;
+  grid-template-areas:
+    "project project project"
+    "button button button";
+  margin: 3rem;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.home-proj-img {
+  grid-area: project;
+  width: 100%;
+}
+
+.more-button {
+  grid-area: button;
+  place-self: end end;
 }
 
 /* FOOTER */
@@ -139,7 +159,7 @@ p {
   margin-right: 5px;
 }
 
-/* CONTACT PAGE */
+/* Other Pages elements */
 
 h2 {
   font-size: 3rem;
@@ -159,8 +179,108 @@ h2 {
   font-style: italic;
 }
 
+/* change headers size and top projects 3 to 2 */
 @media screen and (max-width: 880px) {
   h2 {
     font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  #home-proj-section {
+    display: grid;
+    grid-template-areas:
+      "project project"
+      "project project"
+      "button button";
+  }
+}
+
+/* responsive home screen big-text  */
+@media screen and (max-width: 1170px) {
+  h1 {
+    font-size: 6rem;
+    font-weight: 700;
+  }
+
+  #front-text {
+    margin: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  #front-text {
+    margin: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  #front-text {
+    margin: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  #front-text {
+    margin: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+/* responsive home screen green-section and top projects 2 to 1 */
+
+@media screen and (max-width: 700px) {
+  #dark-green {
+    margin-right: 15%;
+  }
+
+  #home-proj-section {
+    display: grid;
+    grid-template-areas:
+      "project"
+      "project"
+      "project"
+      "button";
+  }
+  .more-button {
+    grid-area: button;
+    place-self: end center;
   }
 }

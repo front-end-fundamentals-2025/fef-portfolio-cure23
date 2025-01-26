@@ -16,3 +16,12 @@ textarea {
   border: 1px solid rgba(200, 200, 200, 0.5);
   background-color: rgba(200, 200, 200, 0.25);
 }
+
+@media screen and (max-width: 800px) {
+  #contact-content {
+    margin: 3rem;
+  }
+  .form-text {
+    padding-right: 0;
+  }
+}
