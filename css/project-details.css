@@ -1,6 +1,5 @@
 .details-container {
-  margin-top: 5rem;
-  margin-left: 3rem;
+  margin: 3rem;
   display: grid;
   grid-template-areas:
     "main-img main-img main-img main-img txt"
@@ -11,7 +10,6 @@
 
 .back-button {
   grid-area: button;
-  margin-inline: 3rem;
   place-self: end end;
 }
 
@@ -22,13 +20,16 @@
 
 .detail-text {
   grid-area: txt;
-  max-width: 400px;
+  margin: 0px;
+  padding-left: 2rem;
+  min-width: 150px;
 }
 
 /* make them in line otherwise one takes up all 4 spaces??? */
 .small-img {
   grid-area: small-img1 small-img2 small-img3 small-img4;
   width: 100%;
+  place-items: start center;
 }
 
 #cover-img {
@@ -38,4 +39,35 @@
 h2 {
   margin-top: 0;
   /*   padding-top: 0; */
+}
+
+@media screen and (max-width: 725px) {
+  .details-container {
+    margin: 3rem;
+    grid-template-areas:
+      "main-img main-img main-img main-img"
+      "main-img main-img main-img main-img"
+      "small-img1 small-img2 small-img3 small-img4"
+      "txt txt txt txt"
+      "button button button button";
+    gap: 10px;
+  }
+
+  .detail-text {
+    grid-area: txt;
+    padding-left: 0px;
+    padding-top: 1rem;
+  }
+
+  .back-button {
+    grid-area: button;
+    margin-top: 3rem;
+    place-self: center center;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .details-container {
+    margin-top: 2rem;
+  }
 }

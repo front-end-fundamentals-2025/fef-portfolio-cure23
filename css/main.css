@@ -69,7 +69,7 @@ h1 {
 }
 
 h3 {
-  font-size: x-large;
+  font-size: 2rem;
   margin-block: 10px;
 }
 
@@ -104,7 +104,7 @@ h2 {
   margin-left: 3rem;
 }
 
-#home-proj-img {
+#home-proj-section {
   margin-inline: 3rem;
 }
 .home-proj-img {
@@ -117,7 +117,7 @@ h2 {
 footer {
   background-color: rgba(82, 109, 79, 1);
   color: white;
-  font-size: small;
+  font-size: 0.75rem;
   text-align: center;
   margin-top: 5rem;
   /* border-top: 2px solid rgba(200, 200, 200, 0.5); */
@@ -142,12 +142,12 @@ p {
 /* CONTACT PAGE */
 
 h2 {
-  font-size: xxx-large;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 .button {
-  font-size: medium;
+  font-size: 1rem;
   font-weight: 500;
   color: white;
   border: 2px solid rgba(82, 109, 79, 0.25);
@@ -157,4 +157,10 @@ h2 {
 
 .italic-font {
   font-style: italic;
+}
+
+@media screen and (max-width: 880px) {
+  h2 {
+    font-size: 2.5rem;
+  }
 }

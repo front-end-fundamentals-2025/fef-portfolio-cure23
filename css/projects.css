@@ -1,16 +1,32 @@
-/* .projects-container {
+.projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-} */
+}
 
-.projects-container {
+/* .projects-container {
   display: grid;
   grid-template-areas:
     "project project project"
     "project project project";
-}
+} */
 
 .project-img {
-  grid-area: project;
   width: 100%;
+}
+
+figcaption {
+  font-size: large;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 880px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
 }
