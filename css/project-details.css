@@ -16,6 +16,7 @@
 .main-img {
   grid-area: main-img;
   width: 100%;
+  filter: drop-shadow(0 0.1em 4px #bbbbbb);
 }
 
 .detail-text {
@@ -30,6 +31,7 @@
   grid-area: small-img1 small-img2 small-img3 small-img4;
   width: 100%;
   place-items: start center;
+  filter: drop-shadow(0 0.1em 4px #bbbbbb);
 }
 
 #cover-img {

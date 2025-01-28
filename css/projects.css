@@ -1,6 +1,8 @@
 .projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 3rem;
+  gap: 1.5rem;
 }
 
 /* .projects-container {
@@ -14,18 +16,22 @@
   width: 100%;
 }
 
+figure {
+  margin: 0;
+}
+
 figcaption {
   font-size: large;
   font-weight: bold;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 950px) {
   .projects-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 680px) {
   .projects-container {
     grid-template-columns: 1fr;
   }

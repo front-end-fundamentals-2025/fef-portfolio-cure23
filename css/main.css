@@ -83,15 +83,15 @@ h3 {
 #green-part {
   background-color: rgba(82, 109, 79, 0.5);
   color: white;
+}
 
-  p {
-    margin: 3rem;
-    padding-bottom: 3rem;
-  }
+.white-text {
+  margin: 3rem;
+  padding-bottom: 3rem;
+}
 
-  h2 {
-    border-bottom: 2px solid white;
-  }
+.white-title {
+  border-bottom: 2px solid white;
 }
 
 p {
