@@ -43,7 +43,7 @@ h2 {
   /*   padding-top: 0; */
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 900px) {
   .details-container {
     margin: 3rem;
     grid-template-areas:
