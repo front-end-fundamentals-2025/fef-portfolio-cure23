@@ -16,6 +16,10 @@
   width: 100%;
 }
 
+figure:hover {
+  transform: scale(1.02);
+}
+
 figure {
   margin: 0;
 }
