@@ -15,10 +15,20 @@
 #contact-content {
   margin-top: var(--margin);
   margin-left: 50%;
+  animation-name: text-opacity-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease;
 }
 textarea {
   border: 1px solid rgba(200, 200, 200, 0.5);
   background-color: rgba(200, 200, 200, 0.25);
+}
+
+#contact-me {
+  animation-name: contact-me-animation;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
 }
 
 @media screen and (max-width: 800px) {
@@ -27,5 +37,49 @@ textarea {
   }
   .form-text {
     padding-right: 0;
+  }
+}
+
+@keyframes text-opacity-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes contact-me-animation {
+  20% {
+    /* transform-origin: -50%; */
+    transform: scale(1.2);
+  }
+  40% {
+    /* transform-origin: -50%; */
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    /* transform-origin: -50%; */
+    transform: rotate(20deg) scale(1.2);
+  }
+  60% {
+    /* transform-origin: -50%; */
+    transform: rotate(-20deg) scale(1.2);
+  }
+  70% {
+    /* transform-origin: -50%; */
+    transform: rotate(20deg) scale(1.2);
+  }
+  80% {
+    /* transform-origin: -50%; */
+    transform: rotate(-20deg) scale(1.2);
+  }
+  90% {
+    /* transform-origin: -50%; */
+    transform: rotate(20deg) scale(1.2);
+  }
+  100% {
+    /* transform-origin: -50%; */
+    transform: scale(1);
   }
 }
