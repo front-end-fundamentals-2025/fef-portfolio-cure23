@@ -1,7 +1,11 @@
+* {
+  --margin: 3rem;
+}
+
 .projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 3rem;
+  margin: var(--margin);
   gap: 1.5rem;
 
   animation-name: bounce-in;

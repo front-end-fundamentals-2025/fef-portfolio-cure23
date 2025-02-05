@@ -4,6 +4,11 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+
+  /* variables */
+  --margin: 3rem;
+  --dark-green: #526d4f;
+  --light-green: #acb6a8;
 }
 
 /* HEADER */
@@ -13,14 +18,14 @@ header {
 }
 
 #logo {
-  color: rgb(82, 109, 79);
+  color: var(--dark-green);
   font-family: "Domine", serif;
   font-weight: 1000;
   font-style: normal;
   font-size: 3rem;
   display: inline-block;
   padding: 0;
-  border-bottom: 4px solid rgb(82, 109, 79);
+  border-bottom: 4px solid var(--dark-green);
   margin: 5px;
 }
 
@@ -56,7 +61,7 @@ h1 {
 }
 
 #front-text {
-  margin: 3rem;
+  margin: var(--margin);
   margin-top: 7rem;
   margin-bottom: 7rem;
 
@@ -71,7 +76,7 @@ h1 {
     color: white;
   }
   to {
-    color: rgb(82, 109, 79);
+    color: var(--dark-green);
   }
 } */
 
@@ -79,7 +84,7 @@ h1 {
   margin-left: 0.2em;
   margin-top: 1rem;
   font-family: "Domine", serif;
-  color: rgb(82, 109, 79);
+  color: var(--dark-green);
 
   /* animation-name: text-color-animation;
   animation-duration: 2s;
@@ -125,12 +130,12 @@ h3 {
   animation-delay: 0.1s;
   animation-direction: normal;
 
-  background-color: rgba(82, 109, 79, 1);
+  background-color: var(--dark-green);
   margin-right: 35%;
 }
 
 #green-part {
-  background-color: rgba(82, 109, 79, 0.5);
+  background-color: var(--light-green);
   color: white;
 }
 
@@ -142,8 +147,8 @@ h3 {
   animation-direction: normal;
   animation-fill-mode: both;
 
-  margin: 3rem;
-  padding-bottom: 3rem;
+  margin: var(--margin);
+  padding-bottom: var(--margin);
 }
 
 .white-title {
@@ -151,18 +156,18 @@ h3 {
 }
 
 p {
-  margin-inline: 3rem;
+  margin-inline: var(--margin);
 }
 
 h2 {
   padding-top: 2rem;
   margin-bottom: 0px;
-  margin-left: 3rem;
+  margin-left: var(--margin);
 }
 
 /* Top-projects section */
 /* #home-proj-section {
-  margin-inline: 3rem;
+  margin-inline: var(--margin);
 } */
 /* .home-proj-img {
   padding-right: 1rem;
@@ -174,7 +179,7 @@ h2 {
   grid-template-areas:
     "project project project"
     "button button button";
-  margin: 3rem;
+  margin: var(--margin);
   margin-top: 1rem;
   gap: 1rem;
 }
@@ -195,7 +200,7 @@ h2 {
 /* FOOTER */
 
 footer {
-  background-color: rgba(82, 109, 79, 1);
+  background-color: var(--dark-green);
   color: white;
   font-size: 0.75rem;
   text-align: center;
@@ -230,9 +235,11 @@ h2 {
   font-size: 1rem;
   font-weight: 500;
   color: white;
-  border: 2px solid rgba(82, 109, 79, 0.25);
+  border: 2px solid var(--light-green);
+  /* opacity: 0.25; */
   border-radius: 10px;
-  background-color: rgba(82, 109, 79, 0.75);
+  background-color: var(--dark-green);
+  /*opacity: 0.75;*/
 }
 
 .italic-font {
@@ -263,7 +270,7 @@ h2 {
   }
 
   #front-text {
-    margin: 3rem;
+    margin: var(--margin);
     margin-top: 6rem;
     margin-bottom: 6rem;
   }
@@ -280,7 +287,7 @@ h2 {
   }
 
   #front-text {
-    margin: 3rem;
+    margin: var(--margin);
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
@@ -297,7 +304,7 @@ h2 {
   }
 
   #front-text {
-    margin: 3rem;
+    margin: var(--margin);
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
@@ -315,8 +322,8 @@ h2 {
 
   #front-text {
     margin: 2rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
   }
 
   h3 {
