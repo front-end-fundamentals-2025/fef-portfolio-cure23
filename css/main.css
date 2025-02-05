@@ -45,6 +45,10 @@ li {
   margin: 10px;
 }
 
+li:hover {
+  color: var(--light-green);
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -260,8 +264,11 @@ h2 {
   border: 2px solid var(--light-green);
   /* opacity: 0.25; */
   border-radius: 10px;
+  background-color: #7d927b;
+}
+
+.button:hover {
   background-color: var(--dark-green);
-  /*opacity: 0.75;*/
 }
 
 .italic-font {
