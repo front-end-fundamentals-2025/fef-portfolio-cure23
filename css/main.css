@@ -11,6 +11,10 @@
   --light-green: #acb6a8;
 }
 
+body {
+  margin: 0%;
+}
+
 /* HEADER */
 
 header {

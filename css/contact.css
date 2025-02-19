@@ -51,27 +51,21 @@ textarea {
 
 @keyframes contact-me-animation {
   25% {
-    /* transform-origin: -50%; */
     transform: scale(1.1);
   }
   40% {
-    /* transform-origin: -50%; */
     transform: rotate(-1deg) scale(1.1);
   }
   55% {
-    /* transform-origin: -50%; */
     transform: rotate(1deg) scale(1.1);
   }
   70% {
-    /* transform-origin: -50%; */
     transform: rotate(-1deg) scale(1.1);
   }
   85% {
-    /* transform-origin: -50%; */
     transform: rotate(1deg) scale(1.1);
   }
   100% {
-    /* transform-origin: -50%; */
     transform: scale(1);
   }
 }
