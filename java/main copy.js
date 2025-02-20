@@ -4,27 +4,26 @@ const contactParElement = document.getElementById("contact-par");
 const nameInputElement = document.getElementById("name-input");
 const emailInputElement = document.getElementById("email-input");
 const messageInputElement = document.getElementById("message-input");
-
-const formElement = document.querySelector("form");
 const contactFooterElement = document.getElementById("contact-footer");
-const contactMainElement = document.getElementById("contact-main");
+const formElement = document.querySelector("form");
+const bodyElement = document.querySelector("body");
 
-//check if the form was already submitted before and sibplay the already submitted message
-if (sessionStorage.submitted === "true") {
-  contactMainElement.style.backgroundColor = "#acb6a8";
-  contactMeElement.style.color = "#FFFFFF";
-  contactMeElement.innerText = "Thank You " + sessionStorage.name + "!";
-  contactParElement.innerText =
-    "I'll get back to you within 24 hours.\nLooking forward to working together!";
+const inputElement = document.querySelector("input");
 
-  //footer position
-  contactMainElement.style.paddingBottom = "3rem";
-  contactFooterElement.style.marginTop = "18rem";
-
-  //remove form after it was submitted
-  formElement.remove();
-  sessionStorage.submitted = true;
+if (localStorage.submitted === true || !localStorage.submitted) {
+  bodyElement.style.backgroundColor = "#ffff00";
+} else {
+  bodyElement.style.backgroundColor = "#00ffff";
 }
+//store partial-input before submission
+/* let nameEnter = nameInputElement.value;
+
+if (nameEnter !== "") {
+  localStorage.text = nameEnter;
+  nameInputElement.value = localStorage.text;
+} */
+
+//nameInputElement.value = localStorage.enteredName;
 
 submitButtonElement.addEventListener("click", function (e) {
   e.preventDefault(); // from https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit
@@ -35,23 +34,21 @@ submitButtonElement.addEventListener("click", function (e) {
 
   //Change message and colours if all input boxes in the form are filled out
   if (enteredName !== "" && enteredEmail !== "" && enteredMessage !== "") {
-    sessionStorage.name = enteredName;
-
-    contactMainElement.style.backgroundColor = "#acb6a8";
+    //bodyElement.style.backgroundColor = "#acb6a8";
     contactMeElement.style.color = "#FFFFFF";
     contactMeElement.innerText = "Thank You " + enteredName + "!";
     contactParElement.innerText =
       "I'll get back to you within 24 hours.\nLooking forward to working togrther";
 
     //footer position
-    contactMainElement.style.paddingBottom = "3rem";
-    contactFooterElement.style.marginTop = "18rem";
+    contactFooterElement.style.position = "absolute";
+    contactFooterElement.style.bottom = "0";
 
     //remove form after it was submitted
     formElement.remove();
-    sessionStorage.submitted = "true";
+    localStorage.submitted = true;
   } else {
-    sessionStorage.submitted = "false";
+    localStorage.submitted = false;
     // red border to the box that wasnt filled out
     if (enteredName == "") {
       nameInputElement.style.border = "1px solid #FF0000";
