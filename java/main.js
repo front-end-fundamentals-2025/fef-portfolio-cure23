@@ -41,7 +41,7 @@ submitButtonElement.addEventListener("click", function (e) {
     contactMeElement.style.color = "#FFFFFF";
     contactMeElement.innerText = "Thank You " + enteredName + "!";
     contactParElement.innerText =
-      "I'll get back to you within 24 hours.\nLooking forward to working togrther";
+      "I'll get back to you within 24 hours.\nLooking forward to working together";
 
     //footer position
     contactMainElement.style.paddingBottom = "3rem";
